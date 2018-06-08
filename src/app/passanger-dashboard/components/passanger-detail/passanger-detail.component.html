@@ -1,0 +1,52 @@
+<div *ngIf="(detail.checkedIn == display) || display== null" class="card">
+    <div class="passanger-status">
+    <span
+        class= "status"
+        [class.checked-in]="detail.checkedIn"
+        ></span>
+    <div class="date">
+        Check in date:
+        {{(
+            detail.checkInDate
+            ? (detail.checkInDate | date: 'MMM d, y') 
+            : 'Not Checked in'
+        ) | uppercase }}
+        </div>
+      </div>
+    <div class="passanger-info">
+        <div *ngIf="editing">
+          <input
+            type="text"
+            [value]="detail.fullname"
+            (input)="onNameChange(name.value)"
+            #name
+            />
+
+        </div>
+        <div *ngIf="!editing">
+        <img src="assets/img/flags/{{ (detail.nationality ? detail.nationality : defaultFlag) }}" width="17"/>
+        {{ detail.fullname }}
+    </div>
+    </div>
+<div class="passanger-children"> 
+    Children: {{ detail.children?.length || 0}} 
+</div>
+<div class="passanger-detail-actions">
+    <button
+        (click)="onSelect()">
+        Select
+    </button>
+    <button
+        (click)="toggleEdit()">
+        {{ editing ? 'Done':'Edit' }}
+    </button>
+    <button
+        (click)="onRemove()">
+        Remove
+    </button>
+    <button
+        *ngIf="!detail.checkedIn"
+        (click)="onCheckIn()">
+        Check In
+    </button>
+</div>

@@ -1,0 +1,84 @@
+{
+  "passangers": [
+    {
+      "id": 1,
+      "fullname": "Joan",
+      "checkedIn": true,
+      "baggage": null,
+      "checkInDate": 1510742000000
+    },
+    {
+      "id": 2,
+      "fullname": "Rose",
+      "checkedIn": false,
+      "children": null,
+      "nationality": "france.svg",
+      "baggage": "null"
+    },
+    {
+      "id": 3,
+      "fullname": "Lebron James",
+      "checkedIn": true,
+      "checkInDate": 1510742000000,
+      "children": [
+        {
+          "name": "Chloe",
+          "age": 7
+        },
+        {
+          "name": "Emma",
+          "age": 5
+        }
+      ],
+      "nationality": "united-states-of-america.svg",
+      "baggage": "null"
+    },
+    {
+      "id": 4,
+      "fullname": "Louise",
+      "checkedIn": true,
+      "checkInDate": 1510742000000,
+      "children": null,
+      "nationality": null,
+      "baggage": "null"
+    },
+    {
+      "id": 5,
+      "fullname": "Tina",
+      "checkedIn": false,
+      "children": null,
+      "nationality": "united-kingdom.svg",
+      "baggage": "had-hold"
+    },
+    {
+      "id": 6,
+      "fullname": "Jordi",
+      "checkedIn": true,
+      "checkInDate": 1510742000000,
+      "children": null,
+      "nationality": "spain.svg",
+      "baggage": "hand-only"
+    },
+    {
+      "id": 7,
+      "fullname": "Carlos",
+      "checkedIn": false,
+      "children": null,
+      "nationality": "andorra.svg",
+      "baggage": "had-hold"
+    },
+    {
+      "id": 8,
+      "fullname": "difhgasgivgsjhvb",
+      "checkedIn": true,
+      "children": null,
+      "nationality": "european-union.svg"
+    },
+    {
+      "id": 9,
+      "checkedIn": false,
+      "children": null,
+      "nationality": "european-union.svg"
+    }
+  ]
+}
